@@ -1,75 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Coding For Free</title>
+    <link rel="stylesheet" href="style.css">
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+</head>
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+            <div class="nav-start">
+                <a class="logo" href="/">
+                    <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/logo.png?raw=true"
+                        width="35" height="35" alt="Inc Logo" />
+                </a>
+                <nav class="menu">
+                    <ul class="menu-bar">
+                        <li>
+                            <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true"
+                                aria-expanded="false" aria-label="browse">
+                                Browse
+                                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div id="dropdown1" class="dropdown">
+                                <ul role="menu">
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#best-of-the-day">
+                                            <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/botd.svg"
+                                                class="icon" />
+                                            <div>
+                                                <span class="dropdown-link-title">Best of the day</span>
+                                                <p>Shorts featured today by curators</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#featured-streams">
+                                            <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/fs.svg"
+                                                class="icon" />
+                                            <div>
+                                                <span class="dropdown-link-title">Featured Streams</span>
+                                                <p>Leading creatives livestreams</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#subscriptions">
+                                            <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sp.svg"
+                                                class="icon" />
+                                            <div>
+                                                <span class="dropdown-link-title">Subscriptions</span>
+                                                <p>Gain exclusive access</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#creative-feed">
+                                            <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/cf.svg"
+                                                class="icon" />
+                                            <div>
+                                                <span class="dropdown-link-title">Creative Feed</span>
+                                                <p>See trending creations</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
 
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and
-            open the
-            <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span
-            >
-            for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
+                                <ul role="menu">
+                                    <li class="dropdown-title">
+                                        <span class="dropdown-link-title">Browse by apps</span>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#adobe-xd">
+                                            <img
+                                                src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/xd.svg" />
+                                            Adobe XD
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#after-effect">
+                                            <img
+                                                src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/ae.svg" />
+                                            After Effect
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#sketch">
+                                            <img
+                                                src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sketch.svg" />
+                                            Sketch
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#indesign">
+                                            <img
+                                                src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/indesign.svg" />
+                                            Indesign
+                                        </a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#figma">
+                                            <img
+                                                src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/figma.svg" />
+                                            Figma
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true"
+                                aria-expanded="false" aria-label="discover">
+                                Discover
+                                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div id="dropdown2" class="dropdown">
+                                <ul role="menu">
+                                    <li>
+                                        <span class="dropdown-link-title">Browse Categories</span>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#branding">Branding</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#illustrations">Illustration</a>
+                                    </li>
+                                </ul>
+                                <ul role="menu">
+                                    <li>
+                                        <span class="dropdown-link-title">Download App</span>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
+                                    </li>
+                                    <li role="menuitem">
+                                        <a class="dropdown-link" href="#linux">Linux</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="nav-link" href="/">Jobs</a></li>
+                        <li><a class="nav-link" href="/">Livestream</a></li>
+                        <li><a class="nav-link" href="/">About</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+            <div class="nav-end">
+                <div class="right-container">
+                    <form class="search" role="search">
+                        <input type="search" name="search" placeholder="Search" />
+                        <i class="bx bx-search" aria-hidden="true"></i>
+                    </form>
+                    <a href="#profile">
+                        <img src="https://github.com/Evavic44/responsive-navbar-with-dropdown/blob/main/assets/images/user.jpg?raw=true"
+                            width="30" height="30" alt="user image" />
+                    </a>
+                    <button class="btn btn-primary">Create</button>
+                </div>
+
+                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+                    <i class="bx bx-menu" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
-      </div>
+    </header>
+    <div class="orgis">
+        <div class="wrapp">
+            <img src="img\Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png" alt="imazh1">
+            <button onclick="btn()"> Next &#8594</button>
+            <hr>
+        </div>
+        <form class="post1" method="post">
+            <div class="form1">
+               <h1>Bashkohuni dhe ju per t'u bere programues te se ardhmes</h1>
+            </div>
+            <div class="form2">
+               <label for="email"><b>Email</b></label>
+               <input type="text" placeholder="Vendos email" name="email" id="email" required>
+                
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Vendos password" name="psw" id="psw" required>
+               <br>
+               <a href="#"><button type="button">Login</button></a>
+               <br>
+               <label><input type="checkbox" name="remember"> You agree to LearnCoding's Terms of Service & Privacy Policy.</label>
+            </div>
+         </form>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+    <section class="container1">
+        <div class="containerbox">
+            <div class="containerimg">
+                <img src="img\2161804-200.png">
+            </div>
+            <div class="containertext">
+                <h2>5k</h2>
+                <p>Online courses</p>
+            </div>
+        </div>
+        <div class="containerbox">
+            <div class="containerimg">
+                <img src="img\1510466-200.png">
+            </div>
+            <div class="containertext">
+                <h2>5k</h2>
+                <p>Online courses</p>
+            </div>
+        </div>
+        <div class="containerbox">
+            <div class="containerimg">
+                <img src="img\2161813-200.png">
+            </div>
+            <div class="containertext">
+                <h2>5k</h2>
+                <p>Online courses</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <br><br>
+    <section class="categories" id="categories">
+        <div class="centertext">
+            <h3>Kategorite</h3>
+            <h2>Me te populluarat</h2>
+        </div>
+        <div class="categoriescontent">
+            <div class="box1">
+                <img src="img\java-icon-15.jpg">
+                <h4>Programming</h4>
+                <p>10 Kurse</p>
+            </div>
+            <div class="box1">
+                <img src="img\445178-200.png">
+                <h4>Web Development</h4>
+                <p>10 Kurse</p>
+            </div>
+            <div class="box1">
+                <img src="img\2663156-200.png">
+                <h4>Digital Marketing</h4>
+                <p>10 Kurse</p>
+            </div>
+            <div class="box1">
+                <img src="img\2198932-200.png">
+                <h4>Data Science</h4>
+                <p>10 Kurse</p>
+            </div>
+        </div>
+        <div class="butonkrye">
+            <a href="#" class="btn">Te tjera</a>
+        </div>
+        <br><br>
+    </section>
+
+    <script type="text/javascript" script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCLalsacDx9LMUlkN-RRR9_vUA6b8p39mE",
+            authDomain: "learn-coding-for-free-7879f.firebaseapp.com",
+            projectId: "learn-coding-for-free-7879f",
+            storageBucket: "learn-coding-for-free-7879f.appspot.com",
+            messagingSenderId: "249144326895",
+            appId: "1:249144326895:web:a35194d29d68f44cc4f91a",
+            measurementId: "G-B5GPVR8W3T"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
 </html>
