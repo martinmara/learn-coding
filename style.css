@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
-.orgis {
-  color: #333333;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  font-family: inherit;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  letter-spacing: -0.4px;
 }
 .post1{
   width: 50%;
@@ -43,10 +53,10 @@
   width: 80%;
   margin-left: 100px;
   float: left;
+  animation: change 10s infinite ease-in-out;
 }
 .wrapp button {
   background-color: beige;
-  border-radius: 50%;
   width: 100px;
   padding: 7px;
   outline: none;
@@ -83,6 +93,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .centertext h2{
   font-size: var(--h2-font);
@@ -131,7 +142,8 @@
 }
 .butonkrye{
   text-align: center;
-  margin-top: 5rem
+  margin-top: 5rem;
+  margin-bottom: 40px;
 }
 .btn{
   display: inline-block;
@@ -145,4 +157,197 @@
 }
 .btn:hover{
   transform: scale(0.9) translateY(-5px);
+}
+
+/*@keyframes change {
+  0% {
+    background-image: url('img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  25% {
+    background-image: url('img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  50% {
+    background-image: url('img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  75% {
+    background-image: url('img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  100% {
+    background-image: url('img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+} */
+.course{
+  background-size: cover;
+  background-position: center;
+}
+.coursecontent{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15px;
+}
+.row{
+  background: var(--light-grey);
+  padding: 0px 0px 10px 0px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 40px rgb(19, 8, 73 / 13%);
+  transition: all ,40s ease;
+}
+.row:hover {
+  transform: translateY(-15px);
+}
+.row img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.coursetext{
+  padding: 35px 20px;
+}
+.coursetext h5{
+  color: orange;
+  font-size: 18px;
+  font-weight: 700;
+}
+.coursetext h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 15px 0 15px;
+  transition: all .40s ease;
+}
+.coursetext h3:hover {
+  color: yellow;
+}
+.coursetext h6 {
+  color: #696969;
+  font-size: var(--p-font);
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.star i {
+  color: var(--primary-color);
+  margin-right: 2px;
+  font-size: 17px;
+}
+.review p {
+  color: #696969;
+  font-size: var(--p-font);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.sliderow {
+  display: flex;
+  width: 3200px;
+  transition: 0.8s;
+}
+.slidecol{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+.userimg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.userimg img {
+  height: 100%;
+  border-radius: 10px;
+}
+.usertext {
+  background: #2d3a59;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color: #d3d4d6;
+  padding: 45px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.usertext p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.usertext h3 {
+  margin: 35px 0 5px;
+  color: #fff;
+}
+.container2 {
+  left: 23%;
+  position: absolute;
+  width: 800px;
+  height: 400px;
+}
+/*.container2 {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+.indicator {
+  position: absolute;
+  left: 54%;
+  transform: translateX(-50%);
+  bottom: -80px;
+}
+.btn1 {
+  display: inline-block;
+  height: 15px;
+  margin: 4px;
+  margin-bottom: 30px;
+  width: 15px;
+  border-radius: 15px;
+  background: red;
+  cursor: pointer;
+}
+.active {
+  width: 45px;
+}
+.testimonial1 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
