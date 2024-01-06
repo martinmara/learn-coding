@@ -351,3 +351,44 @@ body {
   height: 100%;
   overflow: hidden;
 }
+.contact {
+  padding: 60px 13%;
+  margin-top: 550px;
+  background: beige;
+}
+.maincontact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+}
+.contactcontent img{
+  height: auto;
+  width: 70px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+.contactcontent li {
+  margin-bottom: 18px;
+}
+.contactcontent li {
+  list-style-type: none;
+}
+.contactcontent li a {
+  display: block;
+  color: slategrey;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .40s ease;
+}
+.contactcontent li a:hover{
+  transform: translateX(10px);
+  color: #2b72fb;
+}
+.lasttext p{
+  text-align: center;
+  padding: 18px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
