@@ -19,13 +19,6 @@ function toggleHamburger() {
   navMenu.classList.toggle("show");
 }
 
-function btn() {
-  let image = document.getElementById('image');
-  let images = ['img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png','img/pedagogy-massive-open-online-course-education-university-student-student.jpg','img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg'];
-  let random = Math.floor(Math.random() * 3);
-  image.src = images[random];
-}
-
 dropdownBtn.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     const dropdownIndex = e.currentTarget.dataset.dropdown;
