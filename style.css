@@ -159,7 +159,7 @@ body {
   transform: scale(0.9) translateY(-5px);
 }
 
-/*@keyframes change {
+@keyframes change {
   0% {
     background-image: url('img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png');
     background-position: center;
