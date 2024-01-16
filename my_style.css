@@ -146,7 +146,7 @@ td{
 	text-decoration:bold;}
 
 .bulb-animation{
-	background-image: url("1light-off.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/1light-off.png?1705440220576");
 	background-size:5%;
 	background-repeat:no-repeat;
 	display:grid;
@@ -154,14 +154,14 @@ td{
 	}
 
 .bulb-animation:hover{
-	background-image: url("1light-on.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/1light-on.png?1705440227463");
 	transition-duration:0.2s;
 	transition-timing-function: ease-in-out;}
 
 
 
 .your-work{
-	background-image: url("file2.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2Ffile2.png?1705440264770");
 	background-size:7%;
 	background-repeat:no-repeat;
 	display:grid;
@@ -170,14 +170,14 @@ td{
 	}
 
 .your-work:hover{
-	background-image: url("file1.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2Ffile1.png?1705440256567");
 	transition-duration:0.2s;
 	transition-timing-function: ease-in-out;}
 
 
 
 .your-code{
-	background-image: url("coding2.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2Fcoding2.png?1705440249804");
 	background-size:7%;
 	background-repeat:no-repeat;
 	display:grid;
@@ -186,13 +186,13 @@ td{
 	}
 
 .your-code:hover{
-	background-image: url("coding1.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2Fcoding1.png?1705440243416");
 	transition-duration:0.2s;
 	transition-timing-function: ease-in-out;}
 
 
 .full-course{
-	background-image: url("1fullcourse1.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2F1fullcourse1.png?1705440193018");
 	background-size:7%;
 	background-repeat:no-repeat;
 	display:grid;
@@ -201,7 +201,7 @@ td{
 	}
 
 .full-course:hover{
-	background-image: url("2fullcourse2.png");
+	background-image: url("https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/thumbnails%2F2fullcourse2.png?1705440235908");
 	transition-duration:0.2s;
 	transition-timing-function: ease-in-out;}
 
