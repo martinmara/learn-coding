@@ -20,8 +20,12 @@ function toggleHamburger() {
 }
 
 function btn() {
-  let image = document.getElementById('image');
-  let images = ['img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png','img/pedagogy-massive-open-online-course-education-university-student-student.jpg','img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg'];
+  let image = document.getElementById("image");
+  let images = [
+    "img/Online-Learn-Courses-p1x1yjmoc2f9t2e3kt028qnv3vp2cb51rm1isamguc.png",
+    "img/pedagogy-massive-open-online-course-education-university-student-student.jpg",
+    "img/pngtree-online-network-online-education-class-illustration-png-image_3164534.jpg",
+  ];
   let random = Math.floor(Math.random() * 3);
   image.src = images[random];
 }
@@ -45,7 +49,6 @@ dropdownBtn.forEach((btn) => {
   });
 });
 
-
 links.forEach((link) =>
   link.addEventListener("click", () => {
     closeDropdownMenu();
@@ -68,4 +71,32 @@ document.addEventListener("keydown", (e) => {
 
 hamburgerBtn.addEventListener("click", toggleHamburger);
 
-      
+//cart
+let cartCount = 0;
+let cartTotal = 0;
+
+function addToCart(productName, price) {
+  cartCount++;
+  cartTotal += price;
+  updateCartCount(cartCount);
+  updateCartTotal(cartTotal);
+  alert(`Added ${productName} to the cart!`);
+}
+
+function updateCartCount(count) {
+  document.getElementById("cartCount").innerText = count;
+}
+
+function updateCartTotal(total) {
+  document.getElementById("cartTotal").innerText = `$${total.toFixed(2)}`;
+}
+
+//cartHover
+
+function showItems() {
+  const cartWindow = document.getElementById("cart-items");
+  cartWindow.style.display = "block";
+}
+function hideCartWindow() {
+  document.getElementById("cart-items").style.display = "none";
+}

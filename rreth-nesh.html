@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Coding For Free</title>
-  <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="rreth-nesh.css">
-  <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="rreth-nesh.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<header id="nav-menu" aria-label="navigation bar">
+<body style="background-color: rgb(223, 223, 223);">
+    <header id="nav-menu" aria-label="navigation bar">
         <div class="container">
             <div class="nav-start">
                 <a class="logo" href="index.html">
-                   <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code"></i>
                 </a>
                 <nav class="menu">
                     <ul class="menu-bar">
@@ -46,6 +46,8 @@
                                 </div>
                         </li>
                         <li><a class="nav-link" href="rreth-nesh.html">Rreth Nesh</a></li>
+                        <li><a class="nav-link" href="profili-im.html">Profili Im</a></li>
+                        <li><a class="nav-link" href="shporta.html">Shporta</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,46 +58,189 @@
                         <input type="search" name="search" placeholder="Search" />
                         <i class="bx bx-search" aria-hidden="true"></i>
                     </form>
-                    <button class="btn">LogIn</button>
-                </div>
+                    <button class="btn" style="  display: block;
+                    background-color: var(--primary-color);
+                    text-align: center;
+                    padding: 0.6rem 1.4rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    border-radius: 5px;"><a href="login.html"> LogIn</a></button>
 
-                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                </div>
+                <div class="cart" style="display: flex;align-items: center;justify-content: space-between;">
+                    <a onmouseover="showItems()" onmouseout="hideCartWindow()" href="shporta.html"> <i
+                            class="fa-solid fa-cart-shopping fa-2xl" style="color: black; ">
+
+                        </i>
+                    </a>
+                    <p id="cartCount" style="color: black; text-align: center; font-size: 20px; margin-left: 10px;">
+                        0</p>
+                </div>
             </div>
+
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
         </div>
     </header>
-  
-  <main>
-        <section class="about-us">
-            <div class="main-container">
-            
-          </div>
-                <h2>Rreth Nesh</h2>
-                <div class="content">
-                    <div class="text">
-                        <p>Projekti "Learn to Code for Free" synon të ofrojë burime të lira dhe të qasshme për të gjithë
-                            ata që duan të mësojnë kodimin. Ne jemi një ekip i pasionuar i zhvilluesve dhe edukatorëve
-                            që besojnë në përmirësimin e aksesit në arsimin e teknologjisë.</p>
-                        <p>Me një përqendrim të veçantë në ofrimin e kurseve të ndryshme të kodimit, ne synojmë të bëjmë
-                            kodimin të arritshëm për të gjithë, duke ndihmuar njerëzit të fitojnë shkathtësi të
-                            nevojshme për t'u bërë inxhinierë, zhvillues, ose për të ndjekur karrierë të tjera në fushën
-                            e teknologjisë.</p>
-                    </div>
-                    <div class="image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZlJHYE4Vw52ri06omYD9Qf8smoG3PdJCsCg&usqp=CAU"
-                            alt="Foto e projektit Learn to Code for Free">
-                    </div>
-                
+
+    <main>
+        <div class="about-us">
+            <div class="about-us-subheader">
+                <h1 style="font-family: Arial, Helvetica, sans-serif; color: gray;font-size: 14px;margin-top: 180px;text-align:center 
+                ;">
+                    Rreth Nesh</h1>
             </div>
-    </section>
-        
+            <div class="about-us-header">
+                <h1 style="text-align: center;font-family: Arial, Helvetica, sans-serif; margin-top: 30px;">"Bejme
+                    Programimin Me Te
+                    Thjeshte Per Kedo"</h1>
+            </div>
+
+            <div class="about-us-paragraph">
+                <p style="text-align: center; font-family: Arial, Helvetica, sans-serif;text-align: center;">
+                    Mirësevini në
+                    faqen tonë, një
+                    burim i pasur dhe i lehtë për tu njohur me botën e programimit! Ne kemi
+                    përgatitur një mjedis të përshtatshëm për të mësuar kodim falas, duke ofruar burime të larmishme dhe
+                    materiale mësimore për të ndihmuar në zhvillimin e aftësive tuaja programuese.</p>
+            </div>
+
+            <div class="arrow-container"
+                style="display: flex;justify-content: center; align-items: center;margin-top: 70px;"><i
+                    class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i>
+            </div>
+
+            <div class="about-us-team">
+                <div class="teamheader">
+                    <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center;margin-top: 100px;">Per
+                        Programuesit, Nga Programuesit</h2>
+                </div>
+                <div class="team-paragraph">
+                    <p style="font-family: Arial, Helvetica, sans-serif;text-align: center;">Mirësevini në botën tonë të
+                        pasionuar për teknologjinë dhe krijimtarinë! Ne jemi një skuadër e
+                        përkushtuar e profesionistëve të fushës së teknologjisë, të përqendruar në krijimin e
+                        përmbajtjes cilësore dhe në ofrimin e burimeve të avancuara për komunitetin tonë të
+                        programuesve.</p>
+                </div>
+
+                <div class="about-us-team-subheader">
+                    <h1
+                        style="font-family: Arial, Helvetica, sans-serif;color: #007bff; text-align: center;margin-top: 100px; margin-bottom: 100px; ">
+                        Skuadra
+                        Jone</h1>
+                </div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://images.pexels.com/photos/10311994/pexels-photo-10311994.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="">
+                        </div>
+                        <div class="team-member-name">
+
+                            <h3>Orgis</h3>
+
+                        </div>
+                        <div class="team-member-role">
+                            <h5 style="color: gray; font-family: Arial, Helvetica, sans-serif;">Founder</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://images.pexels.com/photos/789303/pexels-photo-789303.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="">
+                        </div>
+                        <div class="team-member-name">
+
+                            <h3>Roselda</h3>
+
+                        </div>
+                        <div class="team-member-role">
+                            <h5 style="color: gray; font-family: Arial, Helvetica, sans-serif;">Content Creator</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://images.pexels.com/photos/5714756/pexels-photo-5714756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                        <div class="team-member-name">
+
+                            <h3>Martin</h3>
+
+                        </div>
+                        <div class="team-member-role">
+                            <h5 style="color: gray; font-family: Arial, Helvetica, sans-serif;">Front-End Developer</h5>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="https://images.pexels.com/photos/3579181/pexels-photo-3579181.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="">
+                        </div>
+                        <div class="team-member-name">
+
+                            <h3>Sonja</h3>
+
+                        </div>
+                        <div class="team-member-role">
+                            <h5 style="color: gray; font-family: Arial, Helvetica, sans-serif;">Marketing Specialist
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="about-us-info" style="margin-top: 100px;">
+            <div class="about-us-ourmission">
+                <div class="ourmission" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="ourmission-header" style="margin-left: 100px;">
+                        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;margin-bottom: 10px;">
+                            Misjoni Jone</h1>
+                        <p
+                            style="font-family: Arial, Helvetica, sans-serif; max-width: 450px; margin: 0 auto; text-align: center;">
+                            Misioni ynë në këtë kompani është i përqëndruar në ndërtimin e një mjedisi të
+                            jashtëzakonshëm
+                            për klientët tanë, duke ofruar shërbime të larta cilësore dhe duke kujdesur për secilin
+                            detaj.
+                            Ne kemi një përkushtim të përhershëm ndaj shkëlqimit dhe krijimit të një eksperience të
+                            paharrueshme për ata që zgjedhin të jenë pjesë e komunitetit tonë.</p>
+                    </div>
+                    <div class="ourmission-image" style="margin-right: 100px;">
+                        <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="about-us-ourstory " style="margin-top: 100px;">
+                <div class="ourstory" style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="ourmission-image2" style="margin-left: 100px;">
+                        <img src="https://images.pexels.com/photos/5223887/pexels-photo-5223887.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="">
+                    </div>
+                    <div class="ourmission-header" style="margin-right: 100px;">
+                        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;margin-bottom: 10px;">
+                            Historia Jone</h1>
+                        <p
+                            style="font-family: Arial, Helvetica, sans-serif; max-width: 450px; margin: 0 auto; text-align: center;">
+                            Nisur si një projekt i vogël me një ekip të përkushtuar, ne kemi kaluar në një rrugë të
+                            gjatë të zhvillimit dhe rritjes. Në fillim, ky projekt ishte një ëndërr e vogël për të
+                            ofruar një eksperiencë të ndryshme dhe më të mirë në fushën tonë. Por me përkushtimin tonë
+                            të vazhdueshëm dhe pasionin për shkëlqim, kemi arritur të krijojmë diçka jashtëzakonshme.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
-  
-      <section class="contact" id="contact">
+
+    <section class="contact" id="contact">
         <div class="maincontact">
             <div class="contactcontent">
-                 <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code"></i>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Twitter</a></li>
@@ -125,9 +270,9 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/f844d2e5f5.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-      <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 
-  </body>
+</body>
 
 </html>

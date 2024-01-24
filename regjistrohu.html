@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,15 +7,16 @@
     <title>Learn Coding For Free</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="login.css">
-</head> 
-  <body>
- 
-<header id="nav-menu" aria-label="navigation bar">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <header id="nav-menu" aria-label="navigation bar">
         <div class="container">
             <div class="nav-start">
                 <a class="logo" href="index.html">
-                   <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code"></i>
                 </a>
                 <nav class="menu">
                     <ul class="menu-bar">
@@ -46,7 +47,8 @@
                                 </div>
                         </li>
                         <li><a class="nav-link" href="rreth-nesh.html">Rreth Nesh</a></li>
-                      <li><a class="nav-link" href="profili-im.html">Profili Im</a></li>
+                        <li><a class="nav-link" href="profili-im.html">Profili Im</a></li>
+                        <li><a class="nav-link" href="shporta.html">Shporta</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,17 +60,27 @@
                         <i class="bx bx-search" aria-hidden="true"></i>
                     </form>
                     <button class="btn"><a href="login.html">LogIn</a></button>
-                </div>
+                    <div class="cart" style="display: flex;align-items: center;justify-content: space-between;">
+                        <a onmouseover="showItems()" onmouseout="hideCartWindow()" href="shporta.html"> <i
+                                class="fa-solid fa-cart-shopping fa-2xl" style="color: black; ">
 
-                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                            </i>
+                        </a>
+                        <p id="cartCount" style="color: black; text-align: center; font-size: 20px; margin-left: 10px;">
+                            0</p>
+                    </div>
+                </div>
             </div>
+
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
         </div>
     </header>
-    
-    
-        <div class="login-page">
+
+
+    <div class="login-page">
         <div class="main-form">
             <div class="logo">
                 <img class="image1"
@@ -90,10 +102,10 @@
             </form>
         </div>
     </div>
-          <section class="contact" id="contact">
+    <section class="contact" id="contact">
         <div class="maincontact">
             <div class="contactcontent">
-               <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-code"></i>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">Twitter</a></li>
@@ -122,10 +134,10 @@
             <p>2024 -Learn Coding For Free- All rights reserved</p>
         </div>
     </section>
-      
-                                         <script src="https://kit.fontawesome.com/f844d2e5f5.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/f844d2e5f5.js" crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
-  </body>
+</body>
 
 </html>

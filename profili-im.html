@@ -7,11 +7,10 @@
     <title>Learn Coding For Free</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="profili-im.css">
 </head>
 
 <body>
-
     <header id="nav-menu" aria-label="navigation bar">
         <div class="container">
             <div class="nav-start">
@@ -80,27 +79,53 @@
     </header>
 
 
-    <div class="login-page">
-        <div class="main-form">
-            <div class="logo">
-                <i class="fa-solid fa-code"></i>
+    <div class="account-container" style="margin-top: 150px;">
+        <div class="account-header">Profili Im</div>
 
+        <div class="account-info">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="learntocode-user" disabled>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="user@example.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter new password">
+            <div class="button-container" style="display: flex;justify-content: center;align-items: center;">
+                <button class="btn">Save Changes</button>
             </div>
-            <form class="register-form">
-                <input type="text" placeholder="name" />
-                <input type="password" placeholder="password" />
-                <input type="text" placeholder="email address" />
-                <button>Krijo</button>
-                <p class="message">I regjistruar?<a href="#">Sign In</a></p>
-            </form>
-            <form class="login-form" action="./regjistrohu.html">
-                <input type="text" placeholder="username" />
-                <input type="password" placeholder="password" />
-                <button style="margin-bottom: 10px;">login</button>
-                <a style="text-decoration: none;  color: black;" href="./regjistrohu.html">Krijo Llogari</a>
-            </form>
         </div>
     </div>
+
+    <div class="arrow-container" style="text-align: center;margin: 0 auto;margin-bottom: 50px;">
+        <i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i>
+    </div>
+    <div class="kurset-e-mia">
+        <section class="categories" id="categories">
+            <div class="centertext">
+                <h3 style="font-size: 20px;">Kurset E Mia</h3>
+
+            </div>
+            <div class="categoriescontent">
+
+                <div class="box1">
+                    <img
+                        src="https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/download.png?v=1704564917670">
+                    <h4>Web Development</h4>
+                    <p>2 Kurse</p>
+                </div>
+                <div class="box1">
+                    <img
+                        src="https://cdn.glitch.global/9e0c3ec4-109e-437f-b1a4-f02b3c1f5e84/2663156-200.png?v=1704564914680">
+                    <h4>Digital Marketing</h4>
+                    <p>1 Kurs</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
     <section class="contact" id="contact">
         <div class="maincontact">
             <div class="contactcontent">
@@ -133,10 +158,64 @@
             <p>2024 -Learn Coding For Free- All rights reserved</p>
         </div>
     </section>
+    <script>
+        var btn1 = document.getElementsByClassName("btn1");
+        var slide = document.getElementById("slide");
+        btn1[0].onclick = function () {
+            slide.style.transform = translatex(0);
+            for (i = 0; i < 4; i++) {
+                btn1[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn1[1].onclick = function () {
+            slide.style.transform = translatex(-800);
+            for (i = 0; i < 4; i++) {
+                btn1[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn1[2].onclick = function () {
+            slide.style.transform = translatex(-1600);
+            for (i = 0; i < 4; i++) {
+                btn1[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn1[3].onclick = function () {
+            slide.style.transform = translatex(-2400);
+            for (i = 0; i < 4; i++) {
+                btn1[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
 
+    <script type="text/javascript" src="index.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCLalsacDx9LMUlkN-RRR9_vUA6b8p39mE",
+            authDomain: "learn-coding-for-free-7879f.firebaseapp.com",
+            projectId: "learn-coding-for-free-7879f",
+            storageBucket: "learn-coding-for-free-7879f.appspot.com",
+            messagingSenderId: "249144326895",
+            appId: "1:249144326895:web:a35194d29d68f44cc4f91a",
+            measurementId: "G-B5GPVR8W3T"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <script src="https://kit.fontawesome.com/f844d2e5f5.js" crossorigin="anonymous"></script>
-
-    <script src="index.js"></script>
 </body>
 
 </html>

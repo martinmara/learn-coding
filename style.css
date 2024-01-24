@@ -14,9 +14,10 @@ body {
 }
 
 .banner {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   text-align: center;
   padding: 50px 20px;
+  margin-top: 200px;
 }
 
 .banner h1 {
@@ -133,8 +134,8 @@ body {
   line-height: 1.2;
 }
 .categoriescontent{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   gap: 5rem;
   justify-content:center;
   align-items: center;
@@ -142,6 +143,7 @@ body {
   text-align: center;
   margin-top: 3rem;
   margin-left: 4rem;
+  margin-right:4rem;
 }
 .box1 img {
   height: auto;
@@ -176,8 +178,9 @@ body {
 }
 .butonkrye{
   text-align: center;
-  margin-top: 5rem;
   margin-bottom: 40px;
+  width: 200px;
+  margin: 5rem auto;
 }
 .btn{
   display: inline-block;
@@ -236,7 +239,7 @@ body {
 }
 .coursecontent{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 2rem;
   align-items: center;
   cursor: pointer;
@@ -387,8 +390,8 @@ body {
 }
 .contact {
   padding: 60px 13%;
-  margin-top: 550px;
-  background: beige;
+  margin-top: 100px;
+  background: rgb(195, 195, 195);
 }
 .maincontact {
   display: grid;
